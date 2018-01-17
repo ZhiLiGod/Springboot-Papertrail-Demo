@@ -5,6 +5,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 import java.nio.charset.Charset;
 
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -30,6 +31,11 @@ public class BaseControllerTest {
 	@Before
 	public void setup() throws Exception {
 	   this.mockMvc = webAppContextSetup(webApplicationContext).build();
+	}
+	
+	@Test
+	public void test() {
+		
 	}
 	
 }
