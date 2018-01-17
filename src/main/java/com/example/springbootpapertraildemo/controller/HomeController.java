@@ -19,7 +19,7 @@ public class HomeController {
 	
 	@GetMapping("/name")
 	public String getName() {
-		log.warn("Welcome to springboot papertrail", new Exception(new Exception()));
+		log.error("Welcome to springboot papertrail", new Exception(new Exception()));
 		return "Zhi Li";
 	}
 	
