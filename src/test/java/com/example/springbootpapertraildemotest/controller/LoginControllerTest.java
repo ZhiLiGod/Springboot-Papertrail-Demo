@@ -6,21 +6,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
-public class HomeControllerTest extends BaseControllerTest {
-	
+public class LoginControllerTest extends BaseControllerTest{
+
 	@Test
-	public void testIndex() throws Exception {
-		this.mockMvc.perform(get("/"))
+	public void testLogin() throws Exception {
+		this.mockMvc.perform(get("/login?name={name}", "iilii"))
 			.andDo(log())
 			.andExpect(status().isOk());
-	}
-	
-	@Test
-	public void testGetName() throws Exception {
-		this.mockMvc.perform(get("/name"))
-			.andDo(log())
-			.andExpect(status().isOk())
-			.andExpect(content().contentType(contentType));
 	}
 
 }
