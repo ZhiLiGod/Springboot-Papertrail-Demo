@@ -10,7 +10,7 @@
         <throwableExcluded>true</throwableExcluded>
     </appender>
     
-    <root level="INFO">
+    <root level="ERROR">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="SYSLOG" />
         <!-- <appender-ref ref="PAPERTRAIL" /> -->
