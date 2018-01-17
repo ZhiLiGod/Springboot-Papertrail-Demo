@@ -11,4 +11,9 @@ public class InvoiceController {
 		return "invoice 001";
 	}
 	
+	@GetMapping("/invoices")
+	public String getInvoices() {
+		return "..";
+	}
+	
 }
