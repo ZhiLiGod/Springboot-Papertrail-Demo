@@ -46,5 +46,12 @@ public class HomeControllerTest {
 			.andDo(log())
 			.andExpect(status().isOk());
 	}
+	
+	@Test
+	public void testGetName() throws Exception {
+		this.mockMvc.perform(get("/name"))
+			.andDo(log())
+			.andExpect(status().isOk());
+	}
 
 }
