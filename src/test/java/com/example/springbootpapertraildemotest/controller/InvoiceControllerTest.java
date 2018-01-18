@@ -16,6 +16,7 @@ public class InvoiceControllerTest extends BaseControllerTest {
 	
 	@Test
 	public void testGet() {
+		String a;
 		//return "haha";
 	}
 
