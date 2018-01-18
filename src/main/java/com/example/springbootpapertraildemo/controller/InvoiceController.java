@@ -13,7 +13,7 @@ public class InvoiceController {
 	
 	@GetMapping("/invoices")
 	public String getInvoices() {
-		return "..";
+		return "invoices";
 	}
 	
 }
