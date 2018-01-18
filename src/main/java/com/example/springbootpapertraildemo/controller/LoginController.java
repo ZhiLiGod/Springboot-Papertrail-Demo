@@ -12,7 +12,8 @@ public class LoginController {
 		if(name.equals("li")) {
 			return "Yes";
 		}else {
-			throw new Exception("Error");
+			//throw new Exception("Error");
+			return "";
 		}
 	}
 	
