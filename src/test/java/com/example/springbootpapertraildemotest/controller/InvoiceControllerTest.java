@@ -13,5 +13,10 @@ public class InvoiceControllerTest extends BaseControllerTest {
 			.andDo(log())
 			.andExpect(status().isOk());
 	}
+	
+	@Test
+	public void testGet() {
+		//return "haha";
+	}
 
 }
