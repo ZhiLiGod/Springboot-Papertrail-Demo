@@ -18,7 +18,6 @@ import org.springframework.web.context.WebApplicationContext;
 import com.example.springbootpapertraildemo.SpringbootpapertraildemoApplication;
 
 @RunWith(SpringRunner.class)
-//@WebMvcTest(SpringbootpapertraildemoApplication.class)
 @SpringBootTest(classes=SpringbootpapertraildemoApplication.class)
 @WebAppConfiguration
 public class BaseControllerTest {
@@ -34,8 +33,8 @@ public class BaseControllerTest {
 	}
 	
 	@Test
-	public void test() {
-		
+	public void test() throws Exception {
+		throw new Exception("Error");
 	}
 	
 }
